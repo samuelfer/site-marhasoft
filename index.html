@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Site MarhaSoft</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+		integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+		crossorigin="anonymous" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<header>
+		<div class="menu-bg">
+			<div class="menu">
+				<div class="menu__logo">
+					<a href="index.html">
+						<img src="img/marha_menu_logo.svg" height="50" alt="MarhaSoft">
+					</a>
+				</div><!-- menu__logo -->
+				<div class="nav">
+					<ul class="nav__list">
+						<li><a href="#quemsomos" class="nav__link">Quem somos</a></li>
+						<li><a href="#cursos" class="nav__link">Tecnologias</a></li>
+						<li><a href="#planos" class="nav__link">planos</a></li>
+						<li><a href="#vantagens" class="nav__link">Contato</a></li>
+					</ul><!-- nav__link -->
+				</div><!-- nav -->
+			</div><!-- menu -->
+		</div><!-- menu-bg -->
+
+		<h1 class="intro">Estamos de olho em <br /> tudo sobre tecnolgia</h1>
+	</header>
+
+	<hr>
+
+	<section class="somos" id="somos">
+		<h2 class="section__titulo">Quem Somos</h2>	
+		<div class="somos-container">
+			<div class="somos-container__texto">
+				<p>
+					"Lute. Acredite. Conquiste. Perca. Deseje. Espere. 
+					Alcance. Invada. Caia. Seja tudo o quiser ser, mas, acima de tudo, seja você sempre."(Tumblr)
+				</p>
+				<p>	
+					"Eu faço da dificuldade a minha motivação. A volta por cima vem na continuação."(Charlie Brown Jr)
+				</p>
+				<p>
+					"A verdadeira motivação vem de realização, desenvolvimento pessoal, satisfação no trabalho e reconhecimento."(Frederick Herzberg)
+				</p>	
+			</div><!-- somos-c__texto -->
+			<div class="somos-container__img">
+				<img src="img/img_home.svg" alt="Quem Somos">
+			</div>
+		</div><!-- somos-c -->
+	</section><!-- quemsomos -->
+
+	<hr>
+
+	<section class="cursos" id="cursos">
+		<h2 class="section__titulo">Tecnologias</h2>
+		<div class="cursos-container">
+			<div class="curso">
+				<img src="img/backend.svg" alt="Inteligência Artificial" class="curso__img">
+				<h3 class="curso__titulo">BackEnd</h3>
+				<p class="curso__descricao">Php, Java, Node</p>
+			</div><!-- curso -->
+			<div class="curso">
+				<img src="img/database.svg" alt="Inteligência Artificial" class="curso__img">
+				<h3 class="curso__titulo">Banco de Dados</h3>
+				<p class="curso__descricao">Mysql, Postgres, SqlServer</p>
+			</div><!-- curso -->
+			<div class="curso">
+				<img src="img/frontend.svg" alt="Inteligência Artificial" class="curso__img">
+				<h3 class="curso__titulo">FrontEnd</h3>
+				<p class="curso__descricao">Angular, VueJs</p>
+			</div><!-- curso -->
+		</div><!-- cursos-container -->
+	</section><!-- sectioncursos -->
+
+	<hr>
+
+	<section class="planos" id="planos">
+		<h2 class="section__titulo" id="plano-titulo">Planos</h2>
+
+		<div class="planos-container">
+			<div class="plano">
+				<h2 class="plano__titulo">Básico</h2>
+				<span class="plano__preco"><sup>R$</sup>25</span>
+				<hr class="plano__divisor">
+				<ul class="plano-lista">
+					<li class="plano-lista__item">1 mês de acesso</li>
+					<li class="plano-lista__item">Acesso a tudo</li>
+					<li class="plano-lista__item">Acesso anual</li>
+				</ul>
+				<a href="#" class="plano__btn-comprar">Comprar</a>
+			</div><!-- plano -->
+			<div class="plano">
+				<h2 class="plano__titulo">Standard</h2>
+				<span class="plano__preco"><sup>R$</sup>25</span>
+				<hr class="plano__divisor">
+				<ul class="plano-lista">
+					<li class="plano-lista__item">1 mês de acesso</li>
+					<li class="plano-lista__item">Acesso a tudo</li>
+					<li class="plano-lista__item">Acesso anual</li>
+				</ul>
+				<a href="#" class="plano__btn-comprar">Comprar</a>
+			</div><!-- plano -->
+
+			<div class="plano">
+				<h2 class="plano__titulo">Premium</h2>
+				<span class="plano__preco"><sup>R$</sup>25</span>
+				<hr class="plano__divisor">
+				<ul class="plano-lista">
+					<li class="plano-lista__item">1 mês de acesso</li>
+					<li class="plano-lista__item">Acesso a tudo</li>
+					<li class="plano-lista__item">Acesso anual</li>
+				</ul>
+				<a href="#" class="plano__btn-comprar">Comprar</a><!-- A class tem essse nome porque ela eh um elemento da class plano -->
+			</div><!-- plano -->
+
+		</div><!-- plano-container -->
+	</section><!-- section planos -->
+</body>
+</html>

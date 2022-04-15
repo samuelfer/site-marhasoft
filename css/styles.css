@@ -1,0 +1,275 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* #162e44 verde mais escuro */
+/* #162e44 verde escuro cor da fonte #06aba1 */
+
+/**********************************/
+/* 0. Variáveis
+/* 1. Container
+/* 2. Menu
+/* 3. Header
+/* 4. Quem somos
+/* 5. Nossos cursos
+/* 6. Planos
+/* 7. Vantagens
+/* 8. Newsletter
+/* 9. Footer
+/**********************************/
+
+/**********************************/
+/* 0. Variáveis
+/**********************************/
+
+:root {
+	--ff-primary: "Nunito", Helvetica, Arial, sans-serif;
+	--marha-green-dark: #049A40;
+	--marha-green-light: #01b3a7;
+	--marha-pink-dark: #E10BF9;
+	--marha-pink-light: #fa8080;
+	--marha-white: #F5F5F5;
+	--marha-blue-light: #d3f0f7;
+	--marha-blue-dark: #287db1;
+}
+
+/**********************************/
+/* 1. Estilos gerais
+/**********************************/
+
+body {
+	background-color: var(--marha-blue-light);
+	font-family: var(--ff-primary);
+}
+
+a,
+a:hover,
+a:active,
+a:link,
+a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+hr {
+	border: none;
+	background-color: #01b3a7;
+	height: 2px;
+	width: 140px;
+	margin: 20px auto;
+}
+
+p {
+	line-height: 21.82px;
+	padding: 0 10px;
+}
+
+.section__titulo {
+	text-align: center;
+	font-size: 3rem;
+	margin-bottom: 10px;
+}
+
+img {
+	/* Evita que a imagem fique muito grande adicona responsividade a imagem*/
+	display: block;
+	max-width: 100%;
+}
+
+/**********************************/
+/* 2. Menu
+/**********************************/
+
+.menu-bg {
+	background-color: var(--marha-blue-dark);
+}
+
+.menu {
+	display: flex; /*Deixa a logo e items de menu lado a lado */
+	align-items: center; /*Alinha ao meio */
+	justify-content: space-between; /* Faz com que a logo fique a direita e os items de menu a esquerda */
+	max-width: 960px;
+	margin: 0 auto;
+	flex-wrap: wrap;
+}
+
+.menu__logo {
+	margin: 10px;
+}
+
+.nav__list {
+	display: flex; /*Coloca os items de menu lado a lado */
+	flex-wrap: wrap;
+}
+
+.nav__link {
+	padding: 20px 10px; /* Adiciona espacos entre os items de menu*/
+}
+
+/**********************************/
+/* 3. Header
+/**********************************/
+
+.intro {
+	font-weight: bold;
+	font-size: 3rem;
+	text-align: center;
+	margin: 0 auto;
+	padding: 25px 0;
+}
+
+/**********************************/
+/* 4. Quem somos
+/**********************************/
+
+.somos {
+	max-width: 960px;
+	margin: 0 auto; /* Centraliza a section */
+}
+
+.somos-container {
+	display: flex; /* Coloca os elementos da section lado a lado */
+	flex-wrap: wrap;/* Permite que fique um elemento abaixo do outro */
+	align-items: center; /* Centraliza os items do container section*/
+}
+
+.somos-container__texto {
+	/*Define que a area do texto vai ocupar uma area 6 vezes maior que a area da imagem*/
+	flex: 6 1 120px;/* flex=grow flex-shrink = permite reduzir o tamanho do container flex-basis = tamanho inicial */
+}
+
+.somos-container__img {
+	flex: 1 1 350px;
+}
+
+/**********************************/
+/* 5. Nossos cursos
+/**********************************/
+
+.cursos {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.cursos-container {
+	display: flex; /* Todos elementos da cursos-container se tornam flex-container*/
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.curso {
+	width: 280px;
+	margin: 0 20px;
+}
+
+.curso__titulo {
+	font-size: 1.5rem;
+	text-align: center;
+	margin: 10px 0 5px 0;
+}
+
+/**********************************/
+/* 6. Planos
+/**********************************/
+
+.planos {
+	background-color: var(--marha-pink-light);
+}
+
+.planos-container {
+	max-width: 960px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap; /* Permite que os items quebre para baixo */
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.plano {
+	width: 290px;
+	margin: 10px;
+	border: 2px solid #acc5c3;
+	border-radius: 5px;
+}
+
+#plano-titulo {
+	color: white;
+}
+
+.plano__titulo {
+	font-size: 3rem /* Equivale a 3*16px*/;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	margin: 10px auto;
+}
+
+.plano__preco {
+	font-size: 3rem;
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+}
+
+.plano__preco sup {
+	position: relative;
+	font-size: 1.5rem;
+	top: -20px;
+	color: white;
+}
+
+.plano__divisor {
+	background-color: white;
+	width: 20px;
+	margin: 5px auto;
+}
+
+.plano-lista {
+	max-width: 195px;
+	margin: 0 auto;
+}
+
+.plano-lista__item {
+	margin: 10px 0;
+	font-style: italic;
+	color: white;
+	display: flex;
+	align-items: center;
+}
+
+.plano-lista__item::before {
+	content: ""; /* Para exibir um pseudoelemento isso eh obrigatorio*/
+	display: block;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+	border-radius: 5px;
+	margin-right: 5px;
+}
+
+.plano__btn-comprar {
+	display: block;
+	max-width: 180px;
+	font-size: 2rem;
+	font-weight: bold;
+	margin: 15px auto;
+	padding: 10px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/**********************************/
+/* 7. Vantagens
+/**********************************/
+
+/**********************************/
+/* 8. Newsletter
+/**********************************/
+
+/**********************************/
+/* 9. Footer
+/**********************************/
+
