@@ -76,6 +76,7 @@ img {
 	/* Evita que a imagem fique muito grande adicona responsividade a imagem*/
 	display: block;
 	max-width: 100%;
+	margin: 0 auto;
 }
 
 /**********************************/
@@ -102,6 +103,7 @@ img {
 .nav__list {
 	display: flex; /*Coloca os items de menu lado a lado */
 	flex-wrap: wrap;
+	list-style: none;
 }
 
 .nav__link {
@@ -154,9 +156,12 @@ img {
 }
 
 .cursos-container {
+	/* max-width: 960px; */
 	display: flex; /* Todos elementos da cursos-container se tornam flex-container*/
 	flex-wrap: wrap;
+	flex-wrap: wrap; /* Permite que os items quebre para baixo */
 	justify-content: center;
+	align-items: flex-end;
 }
 
 .curso {
@@ -172,6 +177,14 @@ img {
 
 .curso__descricao {
 	text-align: center;
+}
+
+.curso__visualizar {
+	text-align: center;
+}
+
+.curso__visualizar a {
+	color: #000;
 }
 
 /**********************************/
